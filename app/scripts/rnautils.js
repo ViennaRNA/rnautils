@@ -292,7 +292,7 @@ export function RNAUtilities() {
         var u5 = [i-1];
         var u3 = [j+1];
 
-        if (arguments.length < 4)
+        if (arguments.length < 5)
             dotBracketBreaks = [];
 
         if (i > j)
@@ -343,7 +343,7 @@ export function RNAUtilities() {
                 m.push(k);
                 while (k <= j) {
                     // recurse into a stem
-                    elements = elements.concat(ptToElements(pt, level, k, pt[k], dotBracketBreaks));
+                    elements = elements.concat(self.ptToElements(pt, level, k, pt[k], dotBracketBreaks));
 
                     // add the nucleotides between stems
                     m.push(pt[k]);

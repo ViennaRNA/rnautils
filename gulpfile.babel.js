@@ -171,3 +171,12 @@ gulp.task('build', ['html', 'buildJs', 'images', 'fonts', 'extras'], () => {
 gulp.task('default', ['clean'], () => {
   gulp.start('build');
 });
+
+gulp.task('test', ['scripts'], () => {
+    gulp.src('test/**/*.js')
+    .pipe($.jasmine())
+});
+
+gulp.task('test-serve', ['test'], () => {
+    gulp.watch(['app/scripts/**/*.js', 'test/**/*.js'], ['test'])
+});
