@@ -1,6 +1,6 @@
 {
   "name": "rnautils",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Functionality for manipulating RNA secondary structures",
   "main": "dist/scripts/rnautils.js",
   "repository": {
@@ -55,6 +55,5 @@
       ]
     }
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
