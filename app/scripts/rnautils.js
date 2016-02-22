@@ -274,4 +274,5 @@ export function RNAUtilities() {
     };
 
 }
+
 export var rnaUtilities = new RNAUtilities();
