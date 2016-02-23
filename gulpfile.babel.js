@@ -62,7 +62,7 @@ gulp.task('html', ['styles', 'scripts'], () => {
 });
 
 gulp.task('buildJs', ['styles', 'scripts'], () => {
-    return gulp.src(['.tmp/scripts/rnautils.js'])
+    return gulp.src(['.tmp/scripts/**/*.js'])
     .pipe($.uglify())
     .pipe(gulp.dest('dist/scripts'))
 });
