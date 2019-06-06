@@ -1,4 +1,9 @@
-# rnautils.js
+# RNAutils
+
+This package is deprecated and will not be updated!
+
+However, development is continued here: https://github.com/ViennaRNA/fornac
+
 
 ### ColorScheme
 
